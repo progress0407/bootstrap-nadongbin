@@ -1,0 +1,16 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+* {
+  font-family: "Nanum Gothic";
+}
+
+.jumbotron {
+  background-image: url("images/jumbotronBackground.jpg");
+  background-size: cover;
+  text-shadow: black 0.2em 0.2em 0.2em 0.2em;
+  color: white;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}

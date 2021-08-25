@@ -8,14 +8,8 @@
   <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
   <script src="jquery.min.js"></script>
   <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
-  <style type="text/css">
-    .jumbotron {
-      background-image: url('images/jumbotronBackground.jpg');
-      background-size: cover;
-      text-shadow: black 0.2em 0.2em 0.2em;
-      color: white;
-    }
-  </style>
+  <link rel="stylesheet" href="codingBooster.css">
+
   <title>Document</title>
 </head>
 
@@ -24,30 +18,48 @@
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">WebSiteName</a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">코딩 부스터</a>
         </div>
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Page 1</a></li>
-          <li><a href="#">Page 2</a></li>
-          <li><a href="#">Page 3</a></li>
-        </ul>
-        <form class="navbar-form navbar-left" action="/action_page.php">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="내용을 입력하세요">
-          </div>
-          <button type="submit" class="btn btn-default">검색</button>
-        </form>
-        <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-              aria-expanded="false">접속하기<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">로그인</a></li>
-              <li><a href="#">회원가입</a></li>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">소개</a><span class="sr-only"></span></li>
+            <li><a href="#">강사진</a></li>
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">강의<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">C언어</a></li>
+                  <li><a href="#">Java</a></li>
+                  <li><a href="#">안드로이드</a></li>
+                </ul>
+              </li>
             </ul>
-          </li>
-        </ul>
+          </ul>
+          <form class="navbar-form navbar-left" action="/action_page.php">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="내용을 입력하세요">
+            </div>
+            <button type="submit" class="btn btn-default">검색</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">접속하기<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <div class="jumbotron text-center">
@@ -56,6 +68,40 @@
       <button type="button" class="btn btn-primary">강의 들으러 가기</button>
     </div>
   </div>
+  <footer style="background-color: #000; color: #fff">
+    <div class="container">
+      <br>
+      <div class="row">
+        <div class="col-sm-2" style="text-align: center;">
+          <h5>Copyright &copy; 2021</h5>
+          <h5>조성우 (Seong Cho)</h5>
+        </div>
+        <div class="col-sm-4" style="text-align: center;">
+          <h4>Copyright &copy; 2021</h4>
+          <p>저는 공공기관 SM에서 근무중인 개발자 조성우입니다. 저녁과 휴일·주말에 공부를 하고 있으며 웹 개발에 관심이 많습니다</p>
+        </div>
+        <div class="col-sm-2" style="text-align: center;">
+          <h4 style="text-align: center;">내비게이션</h4>
+          <div class="list-group">
+            <a href="#" class="list-group-item">소개</a>
+            <a href="#" class="list-group-item">강사진</a>
+            <a href="#" class="list-group-item">강의</a>
+          </div>
+        </div>
+        <div class="col-sm-2" style="text-align: center;">
+          <h4 style="text-align: center;">SNS</h4>
+          <div class="list-group">
+            <a href="#" class="list-group-item">페이스북</a>
+            <a href="#" class="list-group-item">유튜브</a>
+            <a href="#" class="list-group-item">네이버 TV</a>
+          </div>
+        </div>
+        <div class="col-sm-2" style="text-align: center;">
+          <h4><span class="glyphicon glyphicon-ok"></span> &nbsp; by 조성우</h4>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
