@@ -5,7 +5,7 @@
 }
 
 .jumbotron {
-  background-image: url('images/jumbotronBackground.jpg');
+  background-image: url("images/jumbotronBackground.jpg");
   background-size: cover;
   text-shadow: black 0.2em 0.2em 0.2em;
   color: white;
@@ -22,46 +22,54 @@ a:hover {
   cursor: pointer;
 }
 /* 내비게이션 영역 */
-.navbar-default { /* 배경 색상 */
+.navbar-default {
+  /* 배경 색상 */
   background-color: #000;
   border-color: #000;
 }
 
-.navbar-default .navbar-brand { /* 내비 제목 색상 */
+.navbar-default .navbar-brand {
+  /* 내비 제목 색상 */
   color: #fff;
 }
 
 .navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus { /* 내비 제목에 마우스 올렸을 때 */
+.navbar-default .navbar-brand:focus {
+  /* 내비 제목에 마우스 올렸을 때 */
   background-color: transparent;
   color: #bbb;
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus { /* 내비 선택할때 */
+.navbar-default .navbar-nav > .active > a:focus {
+  /* 내비 선택할때 */
   color: white;
   background-color: #000;
 }
 
-.navbar-default .navbar-nav > li > a.hover ,
-.navbar-default .navbar-nav > li > a.focus { /* 내비 글자에 마우스 올릴때 */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  /* 내비 글자에 마우스 올릴때 */
   color: #bbb;
 }
 
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus { /* 드랍다운이 열렸을 떄 마우스 색상 이벤트 */
+.navbar-default .navbar-nav > .open > a:focus {
+  /* 드랍다운이 열렸을 떄 마우스 색상 이벤트 */
   color: #000;
   background-color: #fff;
   text-decoration: none;
 }
 
-.navbar-default .navbar-nav > li > a { /* 내비 기본 색상 */
+.navbar-default .navbar-nav > li > a {
+  /* 내비 기본 색상 */
   color: white;
 }
 
-@media (max-width: 767px) { /* 해상도가 작을 떄 다릅다운 아이템에 마우스를 올렸을 때 */
+@media (max-width: 767px) {
+  /* 해상도가 작을 떄 다릅다운 아이템에 마우스를 올렸을 때 */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #fff;
   }
@@ -70,7 +78,3 @@ a:hover {
     color: #bbb;
   }
 }
-
-
-
-
